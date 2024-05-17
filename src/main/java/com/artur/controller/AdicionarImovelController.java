@@ -152,12 +152,12 @@ public class AdicionarImovelController extends BaseController {
     private void preencherCamposComDadosAleatorios() {
         Random dadosAleatorios = new Random();
 
-        codigoField.setText(String.valueOf(dadosAleatorios.nextInt(10000)));
-        areaConstruidaField.setText(String.format("%.2f", dadosAleatorios.nextFloat() * 1000));
-        areaTotalField.setText(String.format("%.2f", dadosAleatorios.nextFloat() * 2000));
+        codigoField.setText(String.valueOf(dadosAleatorios.nextInt(100)));
+        areaConstruidaField.setText(String.format("%.2f", dadosAleatorios.nextFloat() * 100));
+        areaTotalField.setText(String.format("%.2f", dadosAleatorios.nextFloat() * 200));
         numeroQuartosField.setText(String.valueOf(dadosAleatorios.nextInt(10) + 1));
         tipoComboBox.setValue(dadosAleatorios.nextBoolean() ? "Casa (0)" : "Apartamento (1)");
-        precoField.setText(String.format("R$ %.2f", dadosAleatorios.nextFloat() * 1000000));
+        precoField.setText(String.format("R$ %.2f", dadosAleatorios.nextFloat() * 100));
         cidadeField.setText(RandomStringUtils.randomAlphabetic(8));
         bairroField.setText(RandomStringUtils.randomAlphabetic(8));
     }
