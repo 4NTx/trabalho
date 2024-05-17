@@ -8,14 +8,14 @@
     <center>
         <TableView fx:id="tabelaImoveis">
             <columns>
-                <TableColumn fx:id="colCodigo" text="Código"/>
-                <TableColumn fx:id="colAreaConstruida" text="Área Construída"/>
-                <TableColumn fx:id="colAreaTotal" text="Área Total"/>
-                <TableColumn fx:id="colNumeroQuartos" text="Número de Quartos"/>
-                <TableColumn fx:id="colTipo" text="Tipo"/>
-                <TableColumn fx:id="colPreco" text="Preço"/>
-                <TableColumn fx:id="colCidade" text="Cidade"/>
-                <TableColumn fx:id="colBairro" text="Bairro"/>
+                <TableColumn fx:id="colCodigo" text="Código" minWidth="100" prefWidth="100"/>
+                <TableColumn fx:id="colAreaConstruida" text="Área Construída" minWidth="150" prefWidth="150"/>
+                <TableColumn fx:id="colAreaTotal" text="Área Total" minWidth="100" prefWidth="100"/>
+                <TableColumn fx:id="colNumeroQuartos" text="Número de Quartos" minWidth="150" prefWidth="150"/>
+                <TableColumn fx:id="colTipo" text="Tipo" minWidth="100" prefWidth="100"/>
+                <TableColumn fx:id="colPreco" text="Preço" minWidth="100" prefWidth="100"/>
+                <TableColumn fx:id="colCidade" text="Cidade" minWidth="100" prefWidth="100"/>
+                <TableColumn fx:id="colBairro" text="Bairro" minWidth="100" prefWidth="100"/>
             </columns>
         </TableView>
     </center>

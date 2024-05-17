@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/com/artur/view/Main.fxml"));
         primaryStage.setTitle("Imobiliária");
-        primaryStage.setScene(new Scene(root, 800, 450));
+        primaryStage.setScene(new Scene(root, 910, 550));
         primaryStage.centerOnScreen();
         primaryStage.setResizable(false);
         primaryStage.show();
