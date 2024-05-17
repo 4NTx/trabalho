@@ -61,7 +61,7 @@ public class MainController {
         listaImoveis = FXCollections.observableArrayList(imobiliaria.listarImoveis());
         tabelaImoveis.setItems(listaImoveis);
 
-        tabelaImoveis.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        tabelaImoveis.setColumnResizePolicy(TableView.UNCONSTRAINED_RESIZE_POLICY);
 
         adicionarImovelController = new AdicionarImovelController(imobiliaria, listaImoveis);
         listarImoveisController = new ListarImoveisController(imobiliaria, listaImoveis);
