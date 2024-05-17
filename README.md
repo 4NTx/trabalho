@@ -203,8 +203,8 @@ Classe de serviço que gerencia a lista de imóveis.
 1. Clone o repositório para o seu ambiente local:
 
    ```sh
-   git clone https://github.com/4ntx/trabalho.git
-   cd seurepositorio
+   git clone https://github.com/4ntx/trabalho_java.git
+   cd trabalho_java
    ```
 
 2. Certifique-se de ter o JDK 11 ou superior instalado. Você pode verificar a versão instalada com:
