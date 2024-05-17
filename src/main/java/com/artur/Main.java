@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource(
-                "/com/artur/Main.fxml"));
+                "/com/artur/view/Main.fxml"));
         primaryStage.setTitle("Imobiliária");
         primaryStage.setScene(new Scene(root, 800, 450));
         primaryStage.centerOnScreen();

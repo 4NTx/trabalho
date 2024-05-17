@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artur.controller.MainController">
+    <center>
+        <TableView fx:id="tabelaImoveis">
+            <columns>
+                <TableColumn fx:id="colCodigo" text="Código"/>
+                <TableColumn fx:id="colAreaConstruida" text="Área Construída"/>
+                <TableColumn fx:id="colAreaTotal" text="Área Total"/>
+                <TableColumn fx:id="colNumeroQuartos" text="Número de Quartos"/>
+                <TableColumn fx:id="colTipo" text="Tipo"/>
+                <TableColumn fx:id="colPreco" text="Preço"/>
+                <TableColumn fx:id="colCidade" text="Cidade"/>
+                <TableColumn fx:id="colBairro" text="Bairro"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="center">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Adicionar" onAction="#handleAdicionarImovel"/>
+            <Button text="Listar" onAction="#handleListarImoveis"/>
+            <Button text="Filtrar" onAction="#handleFiltrarImoveis"/>
+            <Button text="Excluir" onAction="#handleExcluirImovel"/>
+            <Button text="Alterar" onAction="#handleAlterarImovel"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,4 +1,4 @@
-package com.artur;
+package com.artur.model;
 
 public class Imovel {
     private int codigo;

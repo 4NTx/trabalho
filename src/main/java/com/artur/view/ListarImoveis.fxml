@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artur.controller.ListarImoveisController" spacing="10" padding="10">
+    <TableView fx:id="tabelaImoveis">
+        <columns>
+            <TableColumn fx:id="colCodigo" text="Código"/>
+            <TableColumn fx:id="colAreaConstruida" text="Área Construída"/>
+            <TableColumn fx:id="colAreaTotal" text="Área Total"/>
+            <TableColumn fx:id="colNumeroQuartos" text="Número de Quartos"/>
+            <TableColumn fx:id="colTipo" text="Tipo"/>
+            <TableColumn fx:id="colPreco" text="Preço"/>
+            <TableColumn fx:id="colCidade" text="Cidade"/>
+            <TableColumn fx:id="colBairro" text="Bairro"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10" alignment="center">
+        <Button text="Listar" onAction="#handleListarImoveis"/>
+    </HBox>
+</VBox>

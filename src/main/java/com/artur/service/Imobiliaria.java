@@ -1,4 +1,6 @@
-package com.artur;
+package com.artur.service;
+
+import com.artur.model.Imovel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,5 +82,14 @@ public class Imobiliaria {
             }
         }
         return filtrados;
+    }
+
+    public boolean imovelExiste(int codigo) {
+        for (Imovel imovel : listaDeImoveis) {
+            if (imovel.getCodigo() == codigo) {
+                return true;
+            }
+        }
+        return false;
     }
 }

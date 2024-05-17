@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artur.controller.ExcluirImovelController" spacing="10" padding="10">
+    <Label text="Digite o código do imóvel a ser excluído:"/>
+    <TextField fx:id="codigoField" promptText="Código"/>
+    <HBox spacing="10" alignment="center">
+        <Button text="Excluir" onAction="#handleExcluirImovel"/>
+    </HBox>
+</VBox>
