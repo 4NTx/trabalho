@@ -84,7 +84,33 @@ public class AlterarImovelController extends BaseController {
             }
         });
 
+        codigoField.focusedProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue) {
+                carregarDadosImovel();
+            }
+        });
+
         dialog.showAndWait();
+    }
+
+    private void carregarDadosImovel() {
+        try {
+            int codigo = parseInt(codigoField.getText(), "Código");
+            Imovel imovel = imobiliaria.buscarImovelPorCodigo(codigo);
+            if (imovel != null) {
+                areaConstruidaField.setText(String.valueOf(imovel.getAreaConstruida()));
+                areaTotalField.setText(String.valueOf(imovel.getAreaTotal()));
+                numeroQuartosField.setText(String.valueOf(imovel.getNumeroQuartos()));
+                tipoComboBox.setValue(imovel.getTipo() == 0 ? "Casa (0)" : "Apartamento (1)");
+                precoField.setText(String.valueOf(imovel.getPreco()));
+                cidadeField.setText(imovel.getCidade());
+                bairroField.setText(imovel.getBairro());
+            } else {
+                mostrarErro("Imóvel não encontrado", "Não foi encontrado um imóvel com o código fornecido.");
+            }
+        } catch (NumberFormatException e) {
+            mostrarErroDeFormato(e);
+        }
     }
 
     private GridPane createFormGridPane() {
@@ -136,7 +162,6 @@ public class AlterarImovelController extends BaseController {
         GridPane.setHgrow(precoField, Priority.ALWAYS);
         GridPane.setHgrow(cidadeField, Priority.ALWAYS);
         GridPane.setHgrow(bairroField, Priority.ALWAYS);
-
         return grid;
     }
 }

@@ -92,4 +92,13 @@ public class Imobiliaria {
         }
         return false;
     }
+
+    public Imovel buscarImovelPorCodigo(int codigo) {
+        for (Imovel imovel : listaDeImoveis) {
+            if (imovel.getCodigo() == codigo) {
+                return imovel;
+            }
+        }
+        return null;
+    }
 }
