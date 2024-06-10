@@ -185,6 +185,7 @@ Classe de serviço que gerencia a lista de imóveis.
 - `listarImoveis()`: Retorna a lista de todos os imóveis.
 - Métodos para filtrar imóveis por tipo, cidade, bairro, preço e número de quartos.
 - `imovelExiste(int codigo)`: Verifica se um imóvel com o código fornecido já existe.
+- `buscarImovelPorCodigo(int codigo)`: Busca dados de um imóvel pelo código.
 
 ## Tecnologias Usadas
 
